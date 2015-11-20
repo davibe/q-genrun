@@ -1,7 +1,7 @@
 {
-  "name": "q-extended",
+  "name": "q-genrun",
   "version": "1.0.0",
-  "description": "Q.js enriched with some more apis",
+  "description": "Q.js based function that turns generators into promises",
   "main": "lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,8 +15,8 @@
   ],
   "author": "Davide Bertola <dade@dadeb.it>",
   "license": "ISC",
-  "dependencies": {
-    "q": "^1.4.1"
+  "peerDependencies": {
+    "q": "*"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0"
