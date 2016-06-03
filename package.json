@@ -1,6 +1,6 @@
 {
   "name": "q-genrun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Q.js based function that turns generators into promises",
   "main": "lib/index",
   "scripts": {

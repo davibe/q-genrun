@@ -4,19 +4,16 @@ q-genrun
 You can launch this script using `coffee --nodejs --harmony src/index.coffee`
 
     Q = require 'q'
-    genrun = require 'q-genrun'
 
 A function that turns a generator into a promise
 
-    Q.genrun = (generator) -> Q.async(generator)()
-
-    module.exports = Q
+    module.exports = genrun = (generator) -> Q.async(generator)()
 
 Example of combined usage
 
     if not module.parent
 
-      Q.genrun ->
+      genrun ->
         console.log 'Counting from 1 to 10'
 
         for i in [1..10]
